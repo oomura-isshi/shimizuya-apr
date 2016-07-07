@@ -1,0 +1,125 @@
+<ons-page>
+
+
+        
+        
+    	<style type="text/css">
+		<!--
+            ons-carousel-item {
+              display: table;
+              text-align: center;
+            }
+            
+            .item-label {
+              display: table-cell;
+              vertical-align: middle;
+              color: white;
+              line-height: 1;
+              font-size: 48px;
+              font-weight: bold;
+            }
+            
+            .cover-label {
+              text-align: center;
+              position: absolute;
+              left: 0px;
+              width: 100%;
+              bottom: 10px;
+              color: white;
+            }
+
+
+            .carousel-item-chevron-l:before {
+                position: absolute;
+                left: 16px;
+                top: 50%;
+                color: #ddd;
+                line-height: 28px;
+                height: 28px;
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                transform: translateY(-50%);
+                font-size: 28px;
+                font-family: FontAwesome;
+                font-style: normal;
+                font-weight: normal;
+                content: "\f104";
+            }
+            .carousel-item-chevron-r:before {
+                position: absolute;
+                right: 16px;
+                top: 50%;
+                color: #ddd;
+                line-height: 28px;
+                height: 28px;
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                transform: translateY(-50%);
+                font-size: 28px;
+                font-family: FontAwesome;
+                font-style: normal;
+                font-weight: normal;
+                content: "\f105";
+            }
+
+
+    	-->
+		</style>
+
+    <!--====================================================
+      ツールバー
+    ======================================================-->
+    <ons-toolbar>
+        <!-----------------------------------------------------
+          戻るボタン
+        ------------------------------------------------------->
+        <div class="left">
+            <ons-back-button>Back</ons-back-button>
+        </div>
+        
+        <!-----------------------------------------------------
+          ロゴ
+        ------------------------------------------------------->
+        <div class="center"><img src="images/shimizuya.jpg"></div>
+    </ons-toolbar>
+
+  <ons-carousel swipeable overscrollable auto-scroll fullscreen var="carousel">
+  
+    <ons-carousel-item>
+        <div  class="thumbnail">
+            <img src="http://www.shimizuya.co.jp/apr/gentei/001.jpg" width=100% class="img-responsive">
+        </div>
+    </ons-carousel-item>
+    
+    <ons-carousel-item>
+        <div>
+            <img src="http://www.shimizuya.co.jp/apr/gentei/002.jpg"  width=100%  class="img-responsive">
+        </div>
+    </ons-carousel-item>
+
+
+    
+    <ons-carousel-item>
+        <div>
+            <img src="http://www.shimizuya.co.jp/apr/gentei/003.jpg"  width=100%  class="img-responsive">
+        </div>
+    </ons-carousel-item>
+    
+    <ons-carousel-item>
+        <div>
+            <img src="http://www.shimizuya.co.jp/apr/gentei/004.jpg"  width=100%  class="img-responsive">
+        </div>
+    </ons-carousel-item>
+    
+    <div class="carousel-item-chevron-l"></div>
+    <div class="carousel-item-chevron-r"></div>
+    
+    
+  </ons-carousel>
+  
+  
+</ons-page>

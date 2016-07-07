@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <script src="lib/onsenui/js/onsenui.min.js"></script>
+
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+    
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/app.css">
+    <style type="text/css">
+    <!--
+        ons-tab {
+            background-color: #000000;
+            
+        }
+        
+    -->
+	</style>
+</head>
+<body>
+    <ons-tabbar var="tabbar" ng-controller="TabbarController as ctrl">
+      <ons-tab page="http://www.shimizuya.co.jp/apr/main.html"     label="ホーム"     icon="fa-home" active="true"></ons-tab>
+      <ons-tab page="chirashi.html" label="チラシ"     icon="fa-file-image-o" ></ons-tab>
+      <!--<ons-tab page="gentei.html"   label="きてみて帳" icon="ion-card"></ons-tab>-->
+      <ons-tab page="shop.html"     label="店舗情報"   icon="fa-building-o"></ons-tab>
+      
+      <ons-tab label="ホームページ" 
+               icon="ion-android-phone-portrait" 
+               onclick="window.open('http://www.shimizuya.co.jp', '_blank', 'clearcache=yes,enableViewportScale=yes,location=no,toolbar=yes,toolbarposition=top,closebuttoncaption=＜閉じる');">
+                   
+               </ons-tab>
+      
+      <ons-tab label="求人"   
+               icon="ion-ios-briefcase" 
+               onclick="window.open('http://www.shimizuya.co.jp/recruit/saiyou/index.html', '_blank', 'clearcache=yes,enableViewportScale=yes,location=no,toolbar=yes,toolbarposition=top,closebuttoncaption=＜閉じる');">
+                   
+               </ons-tab>
+    </ons-tabbar>
+</body>
+</html>
